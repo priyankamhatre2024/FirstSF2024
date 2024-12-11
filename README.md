@@ -9,3 +9,14 @@ Map<String,List<String>> masterData = new Map<String,List<String>>();
 masterData.put('Product',product);
 masterData.put('Size',size);
 System.debug(masterdata.values());
+****************Test Class*********
+@isTest
+public class FitnessTest{
+  public static void calculateBMITest(){
+    Fitness obj = new Fitness();
+    Double result = obj.calculateBMI(10,20);
+    System.assert(obj.calculateBMI(10,20) == 30,'Wrongly Calculated');
+    System.assertEquals(30,obj.calculateBMI(10,20),'Wrongly Calculated');
+  }
+}
+
